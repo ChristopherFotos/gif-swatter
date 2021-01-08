@@ -8,8 +8,7 @@ export default class Target extends Component {
                 ...props.style,
                 display: 'block'
             }
-        }
-        
+        }   
     }
 
     die(){
