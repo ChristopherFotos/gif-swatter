@@ -18,11 +18,14 @@ export default class Target extends Component {
                 display: 'none'
             }}
         )
+
+        this.props.score()
     }
     
     render() {
+        console.log('PROPS ::::: ',this.props.sticker);
         return (
-            <h1 style = {this.state.style} ref={this.props.reference} onClick={()=>this.die()}>HELLO</h1>
+            <img src = {this.props.sticker} style = {this.state.style} ref={this.props.reference} onClick={()=>this.die()}></img>
          )
     }
 }
